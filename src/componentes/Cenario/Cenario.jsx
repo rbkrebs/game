@@ -1,12 +1,30 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 
 
 import './Cenario.css';
 
-export default function Cenario({cenario, personagem}){
-    
-    //const figura_cenario = require("../../assets/cenarios/cenariobar.png");
+export default function Cenario(){
+
+    const id = useSelector(state => state.id_pergunta_atual);
+
+    const cenarios = [
+
+        require("../../assets/cenarios/cenariorefeitorio.png"),
+        require("../../assets/cenarios/cenariobar.png"),
+        require("../../assets/cenarios/cenariorefeitorio.png")
+
+    ]
+    const personagens = [
+
+        require("../../assets/personagens/1.png"),
+        require("../../assets/personagens/2.png"),
+        require("../../assets/personagens/3.png")
+
+    ]
+
+    console.log(cenarios[id])
     
     return(
         
@@ -14,7 +32,7 @@ export default function Cenario({cenario, personagem}){
         className="cenario"
         
         style={{
-           backgroundImage:`url(${cenario})`,
+           backgroundImage: `url(${cenarios[id].default})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize:'cover',
             backgroundPositionX: 'center',
@@ -25,7 +43,7 @@ export default function Cenario({cenario, personagem}){
         <div className="cenario__personagem"
         
         style={{
-            backgroundImage:`url(${personagem})`,
+            backgroundImage:`url(${personagens[id].default})`,
             backgroundRepeat: 'no-repeat',
             backgroundPositionX: 'center',
             backgroundPositionY: 'botton',
