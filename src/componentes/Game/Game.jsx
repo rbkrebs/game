@@ -32,7 +32,7 @@ while(id<3){
             personagem = {questao[id].url_personagem}/>
             <div className="game__bar_botton">
                 <Resposta respostas = {questao[id].opcoes}/>
-                <Botao/>
+                <Botao texto="Próximo"/>
             </div>
         </div>
     )
@@ -44,7 +44,9 @@ return(
         <Premio/>
         
      
-        <div className="game__bar_botton"/>
+        <div className="game__bar_botton">
+        <Botao texto="Ver Perfil"/>
+        </div>
            
     </div>
 )

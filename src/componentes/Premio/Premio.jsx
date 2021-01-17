@@ -17,21 +17,24 @@ export default function Premio(){
     return(
         <div 
         className="premio">
-           <p className="premio__mensagem">Parabéns, você foi excelente! Você ganhou muito pontos! Continuem se capacitando...</p>
+           <p className="premio__mensagem">Parabéns, você foi excelente! Você ganhou muitos pontos! Continue se capacitando...</p>
            <div className="premio__badges">
             <div className="premio__badge">
-                <img src={pensamentocritico}></img>
+                <img src={pensamentocritico}
+                 alt= {`badget de ${pensamentocritico}`}></img>
                 <span>Pensamento crítico</span>
                 <span>3000 pontos</span>
             </div>
             
             <div className="premio__badge">
-                <img src={resolucaodeproblemas}></img>
+                <img src={resolucaodeproblemas}
+                alt= {`badget de ${resolucaodeproblemas}`}></img>
                 <span>Resolução de problema</span>
                 <span>1505 pontos</span>
             </div>
             <div className="premio__badge">
-                <img src={criatividade}></img>
+                <img src={criatividade}
+                 alt= {`badget de ${criatividade}`}></img>
                 <span>Criatividade</span>
                 <span>4620 pontos</span>
             </div>  
