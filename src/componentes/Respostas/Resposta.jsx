@@ -4,12 +4,19 @@ import React from 'react';
 
 import './Resposta.css';
 
-export default function Resposta(){
-
+export default function Resposta(opcoes){
+  
     return(
 
         <div className="resposta">
- oi
+            <ul>
+
+            {opcoes.respostas.map((opcao) => {
+
+            return(<li>{opcao.opcao}</li>)
+            })}
+                
+                </ul>  
         </div>
     )
 }

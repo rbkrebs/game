@@ -5,14 +5,25 @@
       "url_personagem":"'../../assets/personagens/1.png'",
       "local": "refeitorio",
       "Pergunta": "Você escuta um de seus colegas preocupado em ter postergado uma tarefa mediana que lhe foi passada pelo chefe",
-      "opcao1": "Acalmar e dizer que acredita que ele consegue fazer, mesmo não sabendo muito sobre o trabalho desta pessoa",
-      "opcao1softs" : [ 1 ],
-      "opcao2": "Reservar um pouco de seu tempo e dizer que vai ajudá-lo com a tarefa, desde que possa",
-      "opcao2softs" : [2, 2],
-      "opcao3": "Oferecer um conselho sobre organização e dizer pra atentar-se a isso no futuro",
-      "opcao3softs" : [4],
-      "opcao4": "Não tomar o problema para si e deixar com que o gestor identifique este problema para tratar com a pessoa",
-      "opcao4softs" : [5]
+      "opcoes":[{
+        "id":1,
+        "opcoe":
+       "Acalmar e dizer que acredita que ele consegue fazer, mesmo não sabendo muito sobre o trabalho desta pessoa",
+      "opcaosofts" : [ 1 ]
+    
+    },{
+      "id":2,
+      "opcao": "Reservar um pouco de seu tempo e dizer que vai ajudá-lo com a tarefa, desde que possa",
+      "opcaosofts" : [2, 2]
+    },{
+      "id":3,
+      "opcao": "Oferecer um conselho sobre organização e dizer pra atentar-se a isso no futuro",
+      "opcaosofts" : [4]
+    },{
+      "id":4,
+      "opcao": "Não tomar o problema para si e deixar com que o gestor identifique este problema para tratar com a pessoa",
+      "opcaosofts" : [5]
+    }]
     },
    {
       "id": 2,

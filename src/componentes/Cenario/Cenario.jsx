@@ -11,14 +11,14 @@ import './Cenario.css';
 export default function Cenario({cenario, personagem}){
     
     //const figura_cenario = require("../../assets/cenarios/cenariobar.png");
-    console.log(`"${cenario}"`)
+    
     return(
         
         <div 
         className="cenario"
         
         style={{
-           // backgroundImage:`url(${figura_cenario.default})`,
+           backgroundImage:`url(${cenario})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize:'cover',
             backgroundPositionX: 'center',
