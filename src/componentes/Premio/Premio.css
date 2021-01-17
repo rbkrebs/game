@@ -1,0 +1,30 @@
+.premio{ 
+       
+        height: 70vh;  
+        width: 100%;
+        background-color: teal;
+        color: white;
+        
+       
+}
+.premio__mensagem{
+    font-size: 36pt;
+}
+.premio__badges{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.premio__badge{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.premio__badge > *{
+
+    font-size: 20pt;
+    color: white;
+}

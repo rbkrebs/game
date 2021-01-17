@@ -7,3 +7,15 @@ export function proximaPergunta(){
         
     }
 }
+
+export function clickedMouse(){
+
+   
+
+    return{
+
+        type: "ESCOLHE_RESPOSTA",
+        
+    }
+
+}

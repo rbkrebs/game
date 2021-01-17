@@ -2,10 +2,6 @@ import React from 'react';
 
 
 
-import VLibras from "@djpfs/react-vlibras";
- 
-
-
 import './Cenario.css';
 
 export default function Cenario({cenario, personagem}){
@@ -25,7 +21,7 @@ export default function Cenario({cenario, personagem}){
             backgroundPositionY: 'center',
         }}
         > 
-        <VLibras />
+       
         <div className="cenario__personagem"
         
         style={{

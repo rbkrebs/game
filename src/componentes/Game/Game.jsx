@@ -4,7 +4,9 @@ import Cenario from '../Cenario/Cenario';
 import Botao from '../Botao/Botao';
 import Resposta from '../Respostas/Resposta';
 import Pergunta from '../Pergunta/Pergunta';
+import Premio from '../Premio/Premio'
 import { useSelector } from 'react-redux';
+
 
 
 import './Game.css';
@@ -22,6 +24,7 @@ while(id<3){
         
 
         <div className="game">
+             
             <div className="game__bar_top">
             <Pergunta pergunta = {questao[id].Pergunta}/>
             </div>
@@ -33,7 +36,18 @@ while(id<3){
             </div>
         </div>
     )
+    
 }
+return(
+    <div className="game">
+        <div className="game__bar_top"/>
+        <Premio/>
+        
+     
+        <div className="game__bar_botton"/>
+           
+    </div>
+)
 
     
 }
