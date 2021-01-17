@@ -45,7 +45,8 @@ return(
         
      
         <div className="game__bar_botton">
-        <Botao texto="Ver Perfil"/>
+        <Botao texto="Ver Perfil" onClick={() => (window.location = "https://game-e6zamtbwc.vercel.app/")}/>
+       
         </div>
            
     </div>

@@ -13,8 +13,7 @@ export default function Resposta(opcoes) {
     const dispatch = useDispatch();
     const clicked = useSelector(state => state.clicked)
     const mudaSeta = event => dispatch(clickedMouse());
-
-    console.log(clicked)
+  
 
     return (
 
@@ -25,8 +24,8 @@ export default function Resposta(opcoes) {
 
                     return (
                                                    
-                            <li key={opcao.id} className="resposta__opcao"
-                             onMouseOver={mudaSeta}
+                            <li key={opcao.id} className={clicked ? "resposta__opcao":".resposta__opcao:hover"}
+                           
                               onClick={mudaSeta}>
 
                             <img src={clicked ? setaHover : setaDefault } alt="seta para direita" />
