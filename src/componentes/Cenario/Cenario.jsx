@@ -10,7 +10,7 @@ import './Cenario.css';
 
 export default function Cenario({cenario, personagem}){
     
-    const figura_cenario = require("../../assets/cenarios/cenariobar.png");
+    //const figura_cenario = require("../../assets/cenarios/cenariobar.png");
     console.log(`"${cenario}"`)
     return(
         
