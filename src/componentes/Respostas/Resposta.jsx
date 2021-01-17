@@ -9,11 +9,11 @@ export default function Resposta(opcoes){
     return(
 
         <div className="resposta">
-            <ul>
+            <ul className="resposta__opcoes">
 
             {opcoes.respostas.map((opcao) => {
 
-            return(<li>{opcao.opcao}</li>)
+            return(<li key={opcao.id} className="resposta__opcao">{opcao.opcao}</li>)
             })}
                 
                 </ul>  

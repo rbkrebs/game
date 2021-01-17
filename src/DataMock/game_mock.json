@@ -4,10 +4,10 @@
       "url_cenario":"../../assets/cenarios/cenariobar.png",
       "url_personagem":"'../../assets/personagens/1.png'",
       "local": "refeitorio",
-      "Pergunta": "Você escuta um de seus colegas preocupado em ter postergado uma tarefa mediana que lhe foi passada pelo chefe",
+      "Pergunta": "Você escuta um de seus colegas irritado consigo mesmo em ter postergado uma tarefa mediana que lhe foi passada pelo chefe",
       "opcoes":[{
         "id":1,
-        "opcoe":
+        "opcao":
        "Acalmar e dizer que acredita que ele consegue fazer, mesmo não sabendo muito sobre o trabalho desta pessoa",
       "opcaosofts" : [ 1 ]
     
@@ -25,65 +25,57 @@
       "opcaosofts" : [5]
     }]
     },
-   {
+    {
       "id": 2,
-      "url_cenario":"../../assets/cenarios/refeitorio.jpg",
-      "url_personagem":"../../assets/personagens/personagem_1.jpg",
+      "url_cenario":"../../assets/cenarios/cenariobar.png",
+      "url_personagem":"'../../assets/personagens/1.png'",
       "local": "refeitorio",
-      "Pergunta": "Você escuta um de seus colegas preocupado em ter postergado uma tarefa mediana que lhe foi passada pelo chefe",
-      "opcao1": "Acalmar e dizer que acredita que ele consegue fazer, mesmo não sabendo muito sobre o trabalho desta pessoa",
-      "opcao1softs" : [ 1 ],
-      "opcao2": "Reservar um pouco de seu tempo e dizer que vai ajudá-lo com a tarefa, desde que possa",
-      "opcao2softs" : [2, 2],
-      "opcao3": "Oferecer um conselho sobre organização e dizer pra atentar-se a isso no futuro",
-      "opcao3softs" : [4],
-      "opcao4": "Não tomar o problema para si e deixar com que o gestor identifique este problema para tratar com a pessoa",
-      "opcao4softs" : [5]
+      "Pergunta": "Você se reune com seus colegas no bar e vê que um está passando dos limites, assim como criticando várias pessoas. A pessoa aparenta confortável apenas para compartilhar essas coisas com você e os demais",
+      "opcoes":[{
+        "id":1,
+        "opcao":
+       "Escutar os 'desabafos' desta pessoa a fim de confortá-la",
+      "opcaosofts" : [ 1 ]
+    
+    },{
+      "id":2,
+      "opcao": "Retirar esta pessoa imediatamente do lugar para que ela não se comprometa",
+      "opcaosofts" : [2, 2]
+    },{
+      "id":3,
+      "opcao": "Ficar calade para não se comprometer, acreditando que aquilo não levaria a nada",
+      "opcaosofts" : [4]
+    },{
+      "id":4,
+      "opcao": "Sugerir uma solução para que não se arrependa desta conversa e ao mesmo tempo provoque mudanças na empresa",
+      "opcaosofts" : [5]
+    }]
     },
     {
       "id": 3,
-      "url_cenario":"../../assets/cenarios/refeitorio.jpg",
-      "url_personagem":"../../assets/personagens/personagem_1.jpg",
+      "url_cenario":"../../assets/cenarios/cenariobar.png",
+      "url_personagem":"'../../assets/personagens/1.png'",
       "local": "refeitorio",
-      "Pergunta": "Você escuta um de seus colegas preocupado em ter postergado uma tarefa mediana que lhe foi passada pelo chefe",
-      "opcao1": "Acalmar e dizer que acredita que ele consegue fazer, mesmo não sabendo muito sobre o trabalho desta pessoa",
-      "opcao1softs" : [ 1 ],
-      "opcao2": "Reservar um pouco de seu tempo e dizer que vai ajudá-lo com a tarefa, desde que possa",
-      "opcao2softs" : [2, 2],
-      "opcao3": "Oferecer um conselho sobre organização e dizer pra atentar-se a isso no futuro",
-      "opcao3softs" : [4],
-      "opcao4": "Não tomar o problema para si e deixar com que o gestor identifique este problema para tratar com a pessoa",
-      "opcao4softs" : [5]
-    },
-    {
-      "id": 4,
-      "url_cenario":"../../assets/cenarios/refeitorio.jpg",
-      "url_personagem":"../../assets/personagens/personagem_1.jpg",
-      "local": "refeitorio",
-      "Pergunta": "Você escuta um de seus colegas preocupado em ter postergado uma tarefa mediana que lhe foi passada pelo chefe",
-      "opcao1": "Acalmar e dizer que acredita que ele consegue fazer, mesmo não sabendo muito sobre o trabalho desta pessoa",
-      "opcao1softs" : [ 1 ],
-      "opcao2": "Reservar um pouco de seu tempo e dizer que vai ajudá-lo com a tarefa, desde que possa",
-      "opcao2softs" : [2, 2],
-      "opcao3": "Oferecer um conselho sobre organização e dizer pra atentar-se a isso no futuro",
-      "opcao3softs" : [4],
-      "opcao4": "Não tomar o problema para si e deixar com que o gestor identifique este problema para tratar com a pessoa",
-      "opcao4softs" : [5]
-    },
-    {
-      "id": 5,
-      "url_cenario":"../../assets/cenarios/refeitorio.jpg",
-      "url_personagem":"../../assets/personagens/personagem_1.jpg",
-      "local": "refeitorio",
-      "Pergunta": "Você escuta um de seus colegas preocupado em ter postergado uma tarefa mediana que lhe foi passada pelo chefe",
-      "opcao1": "Acalmar e dizer que acredita que ele consegue fazer, mesmo não sabendo muito sobre o trabalho desta pessoa",
-      "opcao1softs" : [ 1 ],
-      "opcao2": "Reservar um pouco de seu tempo e dizer que vai ajudá-lo com a tarefa, desde que possa",
-      "opcao2softs" : [2, 2],
-      "opcao3": "Oferecer um conselho sobre organização e dizer pra atentar-se a isso no futuro",
-      "opcao3softs" : [4],
-      "opcao4": "Não tomar o problema para si e deixar com que o gestor identifique este problema para tratar com a pessoa",
-      "opcao4softs" : [5]
+      "Pergunta": "O limite de capacidade do refeitório é de 4 pessoas por vez em função do isolamento. Você vê mais e mais pessoas chegando sem preocupar",
+      "opcoes":[{
+        "id":1,
+        "opcao":
+       "Levantar sobre como deve-se respeitar as regras da empresa, que são feitas pensando na segurança de todos",
+      "opcaosofts" : [ 1 ]
+    
+    },{
+      "id":2,
+      "opcao": "Chamar o setor responsável para tomar uma atitude e cause mais impacto",
+      "opcaosofts" : [2, 2]
+    },{
+      "id":3,
+      "opcao": "Chamar algumas pessoas para irem almoçar com você em outro lugar",
+      "opcaosofts" : [4]
+    },{
+      "id":4,
+      "opcao": "Fazer um quadro de horários para todos colocarem sua preferência e evitar aglomerações futuras",
+      "opcaosofts" : [5]
+    }]
     }
   ]
 }

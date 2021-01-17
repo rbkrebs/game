@@ -1,9 +1,9 @@
-export function addItemBag(){   
+export function proximaPergunta(){   
 
     
     return{
 
-        type: "SET_BAG",
+        type: "PROXIMA_PERGUNTA",
         
     }
 }

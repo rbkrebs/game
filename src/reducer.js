@@ -2,7 +2,8 @@ import data from './DataMock/game_mock.json'
 
 const INITIAL_STATE = {
     
-    data
+    data,
+    id_pergunta_atual : 0
 
 }
 
@@ -10,11 +11,11 @@ function reducer(state = INITIAL_STATE, action) {
 
     switch (action.type) {
 
-        case "VIEW_PRODUCT":
+        case "PROXIMA_PERGUNTA":
           
             return {
                 ...state,
-                productSelected: action.payload
+                id_pergunta_atual: state.id_pergunta_atual+1
             };
        
 
