@@ -29,7 +29,7 @@ export default function Resposta(opcoes) {
                              onMouseOver={mudaSeta}
                               onClick={mudaSeta}>
 
-                            <img src={clicked ? setaHover : setaDefault } />
+                            <img src={clicked ? setaHover : setaDefault } alt="seta para direita" />
 
                                 {opcao.opcao}
 
