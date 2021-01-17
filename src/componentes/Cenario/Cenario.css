@@ -1,0 +1,19 @@
+.cenario{ 
+       
+        height: 70vh;       
+        position: relative;
+        width: 100%;
+        
+       
+}
+.cenario__personagem{
+
+
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    
+   
+}

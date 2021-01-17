@@ -1,0 +1,26 @@
+.game{
+    margin: auto;   
+    width: 70%;
+    display: flex;
+    flex-direction: column;    
+   
+}
+
+.game__bar_top, .game__bar_botton{
+
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.game__bar_botton{
+    height: 150px;
+    display: flex;
+    
+}
