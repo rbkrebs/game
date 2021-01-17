@@ -24,8 +24,8 @@ export default function Resposta(opcoes) {
 
                     return (
                                                    
-                            <li key={opcao.id} className={clicked ? "resposta__opcao":".resposta__opcao:hover"}
-                           
+                            <li key={opcao.id} className="resposta__opcao"
+                             onMouseOver={mudaSeta}
                               onClick={mudaSeta}>
 
                             <img src={clicked ? setaHover : setaDefault } alt="seta para direita" />
