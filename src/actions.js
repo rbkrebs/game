@@ -11,8 +11,6 @@ export function proximaPergunta(){
 export function clickedMouse(id){
 
 
-   console.log(id)
-
    
 
     return{
