@@ -17,7 +17,8 @@ function reducer(state = INITIAL_STATE, action) {
           
             return {
                 ...state,
-                id_pergunta_atual: state.id_pergunta_atual+1
+                id_pergunta_atual: state.id_pergunta_atual+1,
+                clicked_id: 0
             };
 
             case "ESCOLHE_RESPOSTA":
