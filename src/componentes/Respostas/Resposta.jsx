@@ -2,7 +2,7 @@ import React from 'react';
 
 import setaDefault from '../../assets/cenarios/arrowdefault.png';
 import setaHover from '../../assets/cenarios/arrowhover.png';
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 
 
