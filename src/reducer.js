@@ -4,7 +4,8 @@ const INITIAL_STATE = {
     
     data,
     id_pergunta_atual : 0,
-    clicked: false
+    clicked_id: 0
+
 
 }
 
@@ -23,9 +24,10 @@ function reducer(state = INITIAL_STATE, action) {
           
                 return {
                     ...state,
-                    clicked: true
-                };
-       
+                    clicked_id: action.payload
+                };         
+
+         
 
         default:
             return state;

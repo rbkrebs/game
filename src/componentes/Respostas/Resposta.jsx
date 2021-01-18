@@ -3,40 +3,35 @@ import React from 'react';
 import setaDefault from '../../assets/cenarios/arrowdefault.png';
 import setaHover from '../../assets/cenarios/arrowhover.png';
 import { useDispatch, useSelector } from 'react-redux'
-import { clickedMouse } from "../../actions"
+
 
 
 import './Resposta.css';
 
-export default function Resposta(opcoes) {
+export default function Resposta({resposta, handleClick}) {
 
-    const dispatch = useDispatch();
-    const clicked = useSelector(state => state.clicked)
-    const mudaSeta = event => dispatch(clickedMouse());
-  
+    
+    const clicked = useSelector(state => state.clicked_id)
+
+    console.log(clicked)
+   
 
     return (
 
-        <div className="resposta">
-            <ul className="resposta__opcoes">
 
-                {opcoes.respostas.map((opcao) => {
+        <li className={clicked === resposta.id ?
 
-                    return (
-                                                   
-                            <li key={opcao.id} className="resposta__opcao"
-                             onMouseOver={mudaSeta}
-                              onClick={mudaSeta}>
+            "resposta__opcao_escolhida" : "resposta__opcao"}
 
-                            <img src={clicked ? setaHover : setaDefault } alt="seta para direita" />
+            onClick={() => handleClick(resposta.id)}>
 
-                                {opcao.opcao}
+            <img src={clicked === resposta.id ? setaHover : setaDefault}
+            
+            alt="seta para direita" />
 
-                            </li>)
-                      
-                })}
+            {resposta.opcao}
 
-            </ul>
-        </div>
+        </li>
+
     )
 }

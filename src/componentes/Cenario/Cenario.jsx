@@ -24,7 +24,7 @@ export default function Cenario(){
 
     ]
 
-    console.log(cenarios[id])
+
     
     return(
         

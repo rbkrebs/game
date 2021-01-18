@@ -8,13 +8,29 @@ export function proximaPergunta(){
     }
 }
 
-export function clickedMouse(){
+export function clickedMouse(id){
+
+
+   console.log(id)
 
    
 
     return{
 
         type: "ESCOLHE_RESPOSTA",
+        payload: id
+        
+    }
+
+}
+
+export function respostaEscolhida(){
+
+   
+
+    return{
+
+        type: "ESCOLHE_RESPOSTA_FINAL",
         
     }
 

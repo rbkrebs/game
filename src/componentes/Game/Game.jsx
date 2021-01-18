@@ -5,7 +5,8 @@ import Botao from '../Botao/Botao';
 import Resposta from '../Respostas/Resposta';
 import Pergunta from '../Pergunta/Pergunta';
 import Premio from '../Premio/Premio'
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { clickedMouse} from "../../actions"
 
 
 
@@ -17,6 +18,9 @@ import './Game.css';
 export default function Game({questao}){
 
     const id = useSelector(state => state.id_pergunta_atual);
+    const dispatch = useDispatch();
+    const mudaSeta = id => dispatch(clickedMouse(id));
+
    
 while(id<3){
     return(
@@ -31,7 +35,25 @@ while(id<3){
             <Cenario cenario = {questao[id].url_cenario}
             personagem = {questao[id].url_personagem}/>
             <div className="game__bar_botton">
-                <Resposta respostas = {questao[id].opcoes}/>
+            <div className="resposta">
+                <ul className="resposta__opcoes">
+
+                {
+                    questao[id].opcoes.map((opcao)=>{
+                   
+                        return (
+                            
+                        <Resposta 
+                            resposta = {opcao} 
+                            handleClick={mudaSeta}                            
+                            
+                            />)
+                    })
+
+                }
+                </ul>
+             </div>
+               
                 <Botao texto="Próximo"/>
             </div>
         </div>
@@ -41,11 +63,10 @@ while(id<3){
 return(
     <div className="game">
         <div className="game__bar_top"/>
-        <Premio/>
-        
+        <Premio/>  
      
         <div className="game__bar_botton">
-        <Botao texto="Ver Perfil" onClick={() => (window.location = "https://game-e6zamtbwc.vercel.app/")}/>
+        <Botao texto="Ver Perfil" />
        
         </div>
            
