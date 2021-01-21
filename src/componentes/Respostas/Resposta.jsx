@@ -13,7 +13,7 @@ export default function Resposta({resposta, handleClick}) {
     
     const clicked = useSelector(state => state.clicked_id)
 
-    console.log(clicked)
+
    
 
     return (

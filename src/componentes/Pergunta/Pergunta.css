@@ -1,7 +1,7 @@
 .pergunta{
 
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: Impact, sans-serif;
-    color: white;
+    color: rgb(241, 216, 237);
     flex-wrap: wrap;
 }

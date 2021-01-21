@@ -8,50 +8,30 @@ import './Cenario.css';
 export default function Cenario(){
 
     const id = useSelector(state => state.id_pergunta_atual);
+    const cenarios = useSelector(state => state);
 
-    const cenarios = [
-
-        require("../../assets/cenarios/cenariorefeitorio.png"),
-        require("../../assets/cenarios/cenariobar.png"),
-        require("../../assets/cenarios/cenariorefeitorio.png")
-
-    ]
-    const personagens = [
-
-        require("../../assets/personagens/1.png"),
-        require("../../assets/personagens/2.png"),
-        require("../../assets/personagens/3.png")
-
-    ]
-
-
-    
+   
+        
     return(
         
         <div 
         className="cenario"
-        
-        style={{
-           backgroundImage: `url(${cenarios[id].default})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize:'cover',
-            backgroundPositionX: 'center',
-            backgroundPositionY: 'center',
-        }}
+       
         > 
+
+        <img src={process.env.PUBLIC_URL+`${cenarios.data.questoes[id]
+        .url_cenario}`}
+         alt={cenarios.data.questoes[id].local}
+         className="cenario__picture"/>
+
+        <img src={process.env.PUBLIC_URL+`${cenarios.data.questoes[id]
+        .url_personagem}`}
+         alt={cenarios.data.questoes[id].local}
+         className="cenario__personagem"/>
        
-        <div className="cenario__personagem"
         
-        style={{
-            backgroundImage:`url(${personagens[id].default})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundPositionX: 'center',
-            backgroundPositionY: 'botton',
-            backgroundSize: '100% auto'
-        }}>
        
-         
-        </div>             
+           
         </div>
         
     )
