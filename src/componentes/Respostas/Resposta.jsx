@@ -25,7 +25,9 @@ export default function Resposta({resposta, handleClick}) {
 
             onClick={() => handleClick(resposta.id)}>
 
-            <img src={clicked === resposta.id ? setaHover : setaDefault}
+            <img src={clicked === resposta.id ? 
+            process.env.PUBLIC_URL+setaHover : 
+            process.env.PUBLIC_URL+setaDefault}
             
             alt="seta para direita" />
 
