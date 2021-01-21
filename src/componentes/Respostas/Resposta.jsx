@@ -1,7 +1,7 @@
 import React from 'react';
 
-import setaDefault from process.env.PUBLIC_URL+'../../assets/cenarios/arrowdefault.png';
-import setaHover from process.env.PUBLIC_URL+'../../assets/cenarios/arrowhover.png';
+
+
 import { useSelector } from 'react-redux'
 
 
@@ -26,7 +26,9 @@ export default function Resposta({resposta, handleClick}) {
             onClick={() => handleClick(resposta.id)}>
 
             <img src={clicked === resposta.id ? 
-            setaHover : setaDefault}
+            `${process.env.PUBLIC_URL+'../../assets/cenarios/arrowhover.png'}` : 
+            `${process.env.PUBLIC_URL+'../../assets/cenarios/arrowdefault.png'}`
+            }
             
             alt="seta para direita" />
 
